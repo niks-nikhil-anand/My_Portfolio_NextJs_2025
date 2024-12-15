@@ -1,13 +1,13 @@
-import { Element } from "react-scroll";
-import { faq } from "../constants/index.jsx";
-import FaqItem from "../components/FaqItem.jsx";
+"use client"
+import { faq } from "../../constants/index.jsx";
+import FaqItem from "../FaqItem.jsx";
 
 const Faq = () => {
   const halfLength = Math.floor(faq.length / 2);
 
   return (
     <section>
-      <Element name="faq" className="relative">
+      <div name="faq" className="relative">
         <div className="container relative z-2 py-28">
           <div>
             <h3 className="h3 max-md:h5 max-w-640 max-lg:max-w-md mb-7 text-p4">
@@ -42,7 +42,7 @@ const Faq = () => {
 
           <div className="faq-lin_after absolute left-[calc(50%-1px)] top-0 -z-1 h-full w-0.5 bg-s2 max-lg:hidden" />
         </div>
-      </Element>
+      </div>
     </section>
   );
 };
