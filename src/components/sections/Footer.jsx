@@ -1,4 +1,5 @@
-import { socials } from "../constants/index.jsx";
+"use client"
+import { socials } from "../../constants/index.jsx";
 
 const Footer = () => {
   return (
