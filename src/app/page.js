@@ -1,4 +1,5 @@
 import Download from '@/components/sections/Download'
+import Experience from '@/components/sections/Experience'
 import Faq from '@/components/sections/Faq'
 import Features from '@/components/sections/Features'
 import Footer from '@/components/sections/Footer'
@@ -18,6 +19,7 @@ const page = () => {
       <Faq/>
       <Testimonials/>
       <Download/>
+      <Experience/>
       <Footer/>
     </div>
   )
