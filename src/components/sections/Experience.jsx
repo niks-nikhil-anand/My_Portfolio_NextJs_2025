@@ -31,15 +31,14 @@ const WorkExperience = () => {
   ];
 
   return (
-    <div className=" bg-[#0B0B1D] py-12 text-white">
-      <h2 className="text-4xl font-bold text-center mb-8">
-        My <span className="text-purple-400">work experience</span>
+    <div className=" container relative z-2 py-24 md:py-28 lg:py-30">
+      <h2 className="h3 max-md:h5 text-p3 font-bold text-center mb-8">
+        My <span className="h3 max-md:h5 text-p4">work experience</span>
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-6 max-w-6xl mx-auto">
         {experiences.map((exp, index) => (
           <motion.div
             key={index}
-            whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 300 }}
             className="relative rounded-xl bg-[#111131] p-6 border-2 border-transparent bg-clip-padding hover:border-purple-500"
           >

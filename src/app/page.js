@@ -1,3 +1,4 @@
+import DigitalPresenceCTA from '@/components/sections/DigitalCTA'
 import Download from '@/components/sections/Download'
 import Experience from '@/components/sections/Experience'
 import Faq from '@/components/sections/Faq'
@@ -20,7 +21,9 @@ const page = () => {
       <Testimonials/>
       <Download/>
       <Experience/>
+      <DigitalPresenceCTA/>
       <Footer/>
+
     </div>
   )
 }
