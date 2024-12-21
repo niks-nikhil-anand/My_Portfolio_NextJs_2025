@@ -17,10 +17,10 @@ const page = () => {
       <Hero/>
       <Features/>
       <Pricing/>
-      <Faq/>
       <Testimonials/>
       <Download/>
       <Experience/>
+      <Faq/>
       <DigitalPresenceCTA/>
       <Footer/>
 

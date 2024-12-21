@@ -31,32 +31,30 @@ const WorkExperience = () => {
   ];
 
   return (
-    <div className=" container relative z-2 py-24 md:py-28 lg:py-30">
-      <h2 className="h3 max-md:h5 text-p3 font-bold text-center mb-8">
-        My <span className="h3 max-md:h5 text-p4">work experience</span>
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-6 max-w-6xl mx-auto">
-        {experiences.map((exp, index) => (
-          <motion.div
-            key={index}
-            transition={{ type: "spring", stiffness: 300 }}
-            className="relative rounded-xl bg-[#111131] p-6 border-2 border-transparent bg-clip-padding hover:border-purple-500"
-          >
-            <div className="flex items-center gap-4">
-              
-              <div className="text-5xl">
-                {exp.icon}
-                </div>
-              <div>
-                <h3 className="text-xl font-semibold">{exp.title}</h3>
-                <p className="text-gray-400 text-sm">{exp.description}</p>
-              </div>
-            </div>
-            <div className="absolute inset-0 rounded-xl border-[3px] border-transparent "></div>
-          </motion.div>
-        ))}
-      </div>
-    </div>
+    <div className="container relative z-2 py-24 md:py-28 lg:py-30">
+  <h2 className="text-3xl md:text-4xl text-purple-700 font-bold text-center mb-8">
+    My <span className="text-white">work experience</span>
+  </h2>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-6 max-w-6xl mx-auto">
+    {experiences.map((exp, index) => (
+      <motion.div
+        key={index}
+        transition={{ type: "spring", stiffness: 300 }}
+        className="relative rounded-xl bg-[#111131] p-6 border-2 border-transparent bg-clip-padding hover:border-purple-500 shadow-lg"
+      >
+        <div className="flex items-center gap-4">
+          <div className="text-5xl text-purple-700">{exp.icon}</div>
+          <div>
+            <h3 className="text-xl font-semibold text-gray-50">{exp.title}</h3>
+            <p className="text-sm text-gray-400">{exp.description}</p>
+          </div>
+        </div>
+        <div className="absolute inset-0 rounded-xl border-[3px] border-transparent"></div>
+      </motion.div>
+    ))}
+  </div>
+</div>
+
   );
 };
 

@@ -2,49 +2,52 @@ export const features = [
   {
     id: "0",
     icon: "/images/feature-1.png",
-    caption: "Easy integration",
-    title: "Work smarter not harder",
-    text: "With Xora, tedious tasks are history. Automation and smart processes bring your productivity to new heights. It's like having an extra cup of coffee, but without the jitters.",
+    caption: "Scalable & Modern",
+    title: "Built to Grow with You",
+    text: "Leverage the latest technologies to build scalable, future-proof solutions that adapt to your growing needs and deliver exceptional performance.",
     button: {
       icon: "/images/magictouch.svg",
-      title: "Watch the demo",
+      title: "See My Work",
     },
   },
   {
     id: "1",
     icon: "/images/feature-2.png",
-    caption: "Secure & trustworthy",
-    title: "Sleep easy, we got your back",
-    text: "Your data security is our priority. With state-of-the-art encryption and robust privacy controls, Xora helps keeps your information secure and locked up tighter than Fort Knox.",
+    caption: "Reliable & Secure",
+    title: "Your Vision, My Priority",
+    text: "Leveraging cutting-edge technologies, I create secure, scalable, and reliable websites tailored to your unique requirements. Your dreams are safe and achievable in my hands.",
     button: {
       icon: "/images/docs.svg",
-      title: "Read the docs",
+      title: "Let’s Collaborate",
     },
   },
 ];
+
+
 
 export const details = [
   {
     id: "0",
     icon: "/images/detail-1.png",
-    title: "AI automated video editing",
+    title: "Custom Websites Designed for You",
   },
   {
     id: "1",
     icon: "/images/detail-2.png",
-    title: "Collaborate with your team",
+    title: "Seamless Collaboration on Projects",
   },
   {
     id: "2",
     icon: "/images/detail-3.png",
-    title: "Ultra fast cloud-engine",
+    title: "Fast and Reliable Hosting Solutions",
   },
   {
     id: "3",
     icon: "/images/detail-4.png",
-    title: "24 / 7 Customer support",
+    title: "Dedicated Support, Anytime You Need",
   },
 ];
+
 
 export const faq = [
   {
@@ -112,50 +115,63 @@ export const faq = [
 export const plans = [
   {
     id: "0",
-    title: "Core",
-    priceMonthly: 19,
-    priceYearly: 12,
-    caption: "Best for solo creators",
+    title: "Starter",
+    priceMonthly: 49,
+    priceYearly: 39,
+    caption: "Perfect for individuals",
     features: [
-      "100MB Cloud storage",
-      "100+ prompt templates",
-      "5 projects",
-      "24/7 support",
+      "1 custom landing page",
+      "Responsive design",
+      "Basic SEO setup",
+      "Free hosting",
+      "Email integration",
+      "1 month free support",
     ],
     icon: "/images/circle.svg",
     logo: "/images/plan-1.png",
   },
   {
     id: "1",
-    title: "Overdrive",
-    priceMonthly: 79,
-    priceYearly: 59,
-    caption: "Most popular plan",
+    title: "Professional",
+    priceMonthly: 149,
+    priceYearly: 129,
+    caption: "Ideal for small businesses",
     features: [
-      "All Starter features",
-      "1TB additional storage",
-      "Unlimited projects",
-      "Analytics",
+      "Up to 5 web pages",
+      "Responsive design",
+      "Advanced SEO setup",
+      "E-commerce integration",
+      "Payment gateway integration",
+      "1 million free traffic hosting",
+      "Email integration",
+      "WhatsApp and SMS integration",
+      "3 months free support",
     ],
     icon: "/images/triangle.svg",
     logo: "/images/plan-2.png",
   },
   {
     id: "2",
-    title: "Team",
-    priceMonthly: 39,
-    priceYearly: 29,
-    caption: "Exclusively for teams",
+    title: "Premium",
+    priceMonthly: 299,
+    priceYearly: 249,
+    caption: "Best for growing businesses",
     features: [
-      "All Overdrive features",
-      "10TB additional storage",
-      "50% off per member",
+      "Unlimited web pages",
+      "Advanced SEO & analytics",
+      "E-commerce & payment gateway",
       "Real-time collaboration",
+      "1 million free traffic hosting",
+      "Email integration",
+      "WhatsApp and SMS integration",
+      "Custom integrations (e.g., CRM, ERP)",
+      "6 months free support",
     ],
     icon: "/images/hexagon.svg",
     logo: "/images/plan-3.png",
   },
 ];
+
 
 export const testimonials = [
   {
