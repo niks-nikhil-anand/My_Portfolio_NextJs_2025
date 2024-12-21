@@ -14,9 +14,6 @@ const Pricing = () => {
             <h3 className="h3 max-lg:h4 max-md:h5 z-3 relative mx-auto mb-14 max-w-lg text-center text-p4 max-md:mb-11 max-sm:max-w-sm">
               Flexible Plans for Every Need
             </h3>
-
-            
-
             <div className="pricing-bg">
               <img
                 src="/images/bg-outlines.svg"
