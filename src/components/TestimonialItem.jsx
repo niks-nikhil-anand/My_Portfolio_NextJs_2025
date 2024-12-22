@@ -4,26 +4,42 @@ const TestimonialItem = ({ item, containerClassName }) => {
   return (
     <div
       className={clsx(
-        "relative px-14 pb-14 pt-11 after:absolute after:bottom-0 after:right-0 after:h-0.5 after:w-screen after:bg-s2 after:content-[''] max-md:px-0 max-md:pt-11 after:max-md:-right-4",
-        containerClassName,
+        "relative px-14 pb-14 pt-11 shadow-lg rounded-lg transition-transform hover:scale-105 max-md:px-4 max-md:pt-8",
+        containerClassName
       )}
     >
-      <blockquote className="h6 mb-8 text-p4">{item.comment}</blockquote>
+      <div className="mb-6">
+        <img
+          src={item.image}
+          alt={item.title}
+          className="w-full h-48 object-cover rounded-lg"
+        />
+      </div>
 
-      <div className="flex items-center max-xl:-mr-8">
-        <div className="mr-4 size-20 shrink-0 rounded-half border-2 border-s2 p-1.5">
-          <img
-            src={item.avatarUrl}
-            alt={item.title}
-            className="size-full object-cover"
-          />
-        </div>
+      <h4 className="body-2 mb-2 text-p1 font-bold">{item.title}</h4>
+      <p className="small-compact uppercase text-s3 mb-4">{item.subtitle}</p>
+      <p className="text-p4 mb-6">{item.description}</p>
+
+      <div className="flex flex-wrap gap-4 mb-6">
+        {item.techUsed?.map((tech, index) => (
+          <span
+            key={index}
+            className="px-5  py-1 text-sm bg-s2 text-white rounded-full"
+          >
+            {tech}
+          </span>
+        ))}
+      </div>
+
+      <div className="flex items-center">
+        
         <div>
-          <h4 className="body-2 mb-0.5 text-p1">{item.name}</h4>
-          <p className="small-compact uppercase text-s3">{item.role}</p>
+          <h4 className="body-2 mb-0.5 text-p1 font-bold">{item.title}</h4>
+          <p className="small-compact uppercase text-s3">{item.subtitle}</p>
         </div>
       </div>
     </div>
   );
 };
+
 export default TestimonialItem;

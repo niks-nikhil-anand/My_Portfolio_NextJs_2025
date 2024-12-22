@@ -178,11 +178,40 @@ export const projects = [
     id: "0",
     title: "Web Development Project",
     subtitle: "Freelancer & Website Developer",
-    description: "A passionate freelancer and website developer, crafting user-friendly and visually stunning web solutions tailored to your needs.",
-    image: "/images/projects/web-development-project.png", // Replace with the actual image URL
+    description:
+      "A passionate freelancer and website developer, crafting user-friendly and visually stunning web solutions tailored to your needs.",
+    image: "/images/testimonials/ecommerce-websites.jpg", // Replace with the actual image URL
     techUsed: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Framer Motion"],
   },
+  {
+    id: "1",
+    title: "Mobile App Design",
+    subtitle: "UI/UX Designer",
+    description:
+      "Designing seamless and intuitive user experiences for mobile applications with a focus on aesthetics and functionality.",
+      image: "/images/testimonials/ecommerce-websites.jpg", // Replace with the actual image URL
+      techUsed: ["Figma", "Adobe XD", "React Native", "Tailwind CSS"],
+  },
+  {
+    id: "2",
+    title: "E-commerce Platform",
+    subtitle: "Full-Stack Developer",
+    description:
+      "Developed a robust e-commerce platform integrating advanced features like payment gateways, real-time inventory updates, and analytics.",
+      image: "/images/testimonials/ecommerce-websites.jpg", // Replace with the actual image URL
+      techUsed: ["Node.js", "Express", "MongoDB", "React", "Redux"],
+  },
+  {
+    id: "3",
+    title: "E-commerce Platform",
+    subtitle: "Full-Stack Developer",
+    description:
+      "Developed a robust e-commerce platform integrating advanced features like payment gateways, real-time inventory updates, and analytics.",
+      image: "/images/testimonials/ecommerce-websites.jpg", // Replace with the actual image URL
+      techUsed: ["Node.js", "Express", "MongoDB", "React", "Redux"],
+  },
 ];
+
 
 
 export const logos = [

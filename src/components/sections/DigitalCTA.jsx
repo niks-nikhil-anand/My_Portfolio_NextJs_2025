@@ -1,6 +1,8 @@
 "use client"
 import React from "react";
 import { motion } from "framer-motion";
+import Button from "../Button";
+import icon from '../../../public/images/icons/airplane.png'
 
 const DigitalPresenceCTA = () => {
   return (
@@ -30,9 +32,9 @@ const DigitalPresenceCTA = () => {
       transition={{ duration: 0.2 }}
       className="inline-block"
     >
-      <button className="bg-[#1b1b33] hover:bg-[#2e2e58] text-gray-50 text-lg font-semibold py-3 px-6 rounded-lg border border-[#292952] shadow-md">
-        Let's get in touch <span className="ml-2">✈️</span>
-      </button>
+      <div className="mt-10 flex w-full justify-center">
+           <Button icon="/images/zap.svg">Let's get in touch </Button>
+        </div>
     </motion.div>
   </div>
 </div>

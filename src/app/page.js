@@ -18,7 +18,7 @@ const page = () => {
       <Features/>
       <Pricing/>
       <Testimonials/>
-      <Download/>
+      {/* <Download/> */}
       <Experience/>
       <Faq/>
       <DigitalPresenceCTA/>
