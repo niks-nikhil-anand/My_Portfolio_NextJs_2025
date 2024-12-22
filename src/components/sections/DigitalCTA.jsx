@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const DigitalPresenceCTA = () => {
   return (
-    <div className="bg-[#0f0f1a] text-center min-h-screen flex items-center justify-center px-4">
+    <div className="g7 relative text-center min-h-screen flex items-center justify-center px-4">
   <div className="space-y-8">
     <motion.h1
       initial={{ opacity: 0, y: -50 }}

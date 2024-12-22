@@ -57,7 +57,7 @@ const Header = () => {
                 <li className="nav-li">
                   <NavLink title="features" />
                   <div className="dot" />
-                  <NavLink title="pricing" />
+                  <NavLink title="plans" />
                 </li>
 
                 <li className="nav-logo">
@@ -70,12 +70,9 @@ const Header = () => {
                       "max-lg:hidden transition-transform duration-500 cursor-pointer",
                     )}
                   >
-                    <img
-                      src="/images/xora.svg"
-                      width={160}
-                      height={55}
-                      alt="logo"
-                    />
+                    <h1>
+                      Freelancer
+                    </h1>
                   </LinkScroll>
                 </li>
 

@@ -29,7 +29,7 @@ const Hero = () => {
    </p>
 
    <div onClick={handleScrollToFeatures}>
-     <Button icon="/images/zap.svg">Try it now</Button>
+     <Button icon="/images/zap.svg">Hire me now</Button>
    </div>
  </div>
 </div>

@@ -1,9 +1,10 @@
 "use client"
-import { testimonials } from "../../constants/index.jsx";
+import { projects } from "@/constants/index.jsx";
 import TestimonialItem from "../TestimonialItem.jsx";
 
+
 const Testimonials = () => {
-  const halfLength = Math.floor(testimonials.length / 2);
+  const halfLength = Math.floor(projects.length / 2);
 
   return (
     <section className="relative z-2 py-24 md:py-28 lg:py-40">
@@ -15,7 +16,7 @@ const Testimonials = () => {
 
         <div className="testimonials_inner-after testimonials_inner-before relative -my-12 -mr-3 flex items-start max-lg:static max-md:block">
           <div className="testimonials_group-after flex-50">
-            {testimonials.slice(0, halfLength).map((testimonial) => (
+            {projects.slice(0, halfLength).map((testimonial) => (
               <TestimonialItem
                 key={testimonial.id}
                 item={testimonial}
@@ -25,7 +26,7 @@ const Testimonials = () => {
           </div>
 
           <div className="flex-50">
-            {testimonials.slice(halfLength).map((testimonial) => (
+            {projects.slice(halfLength).map((testimonial) => (
               <TestimonialItem
                 key={testimonial.id}
                 item={testimonial}
