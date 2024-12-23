@@ -13,11 +13,16 @@ export async function GET() {
   ];
 
   try {
+    // Log image paths for debugging
+    console.log("Input and output paths for images:", images);
+
     // Process each image
     const results = await Promise.all(
       images.map(async ({ input, output }) => {
         try {
+          console.log(`Processing image: ${input}`);
           await sharp(input).sharpen().toFile(output);
+          console.log(`Image processed and saved to: ${output}`);
 
           // Return relative path for the output image
           return path.relative("./public", output);
@@ -27,6 +32,8 @@ export async function GET() {
         }
       })
     );
+
+    console.log("All images processed successfully:", results);
 
     return NextResponse.json({
       message: "Images sharpened successfully!",

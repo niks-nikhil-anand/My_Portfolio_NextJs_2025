@@ -13,21 +13,38 @@ const Hero = () => {
     }
   };
 
+
+
   useEffect(() => {
-    // Fetch the sharpened image URLs from the API
+    console.log("Fetching sharpened hero images..."); // Log when the fetch starts
+  
     fetch("/api/sharpen-hero-img")
-      .then((response) => response.json())
+      .then((response) => {
+        console.log("Fetch response received:", response); // Log the raw response
+        return response.json();
+      })
       .then((data) => {
+        console.log("Fetched data:", data); // Log the data received from the API
+  
         if (data.images && Array.isArray(data.images)) {
+          console.log("Valid images array found:", data.images); // Log the array of images
+  
           // Normalize all image URLs in the array
           const normalized = data.images.map((image) =>
             image.replace(/\\/g, "/").replace(/\.jp$/, ".jpg")
           );
+          console.log("Normalized images:", normalized); // Log the normalized image URLs
+  
           setNormalizedImages(normalized);
+        } else {
+          console.warn("No valid images array in fetched data:", data); // Log a warning if images array is missing or invalid
         }
       })
       .catch((error) => console.error("Error fetching sharpened images:", error));
   }, []);
+
+  
+  
 
   return (
     <section className="relative text-white pt-60 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-md:pb-32">
