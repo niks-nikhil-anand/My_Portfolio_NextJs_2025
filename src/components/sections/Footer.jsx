@@ -153,27 +153,20 @@ const Footer = () => {
   <div className="mt-8 text-center border-t border-gray-700 pt-4 flex flex-col md:flex-row justify-between items-center">
     <p className="text-gray-500">DevTrekker © 2024. All Rights Reserved.</p>
     <div className="flex space-x-6 mt-4 md:mt-0">
-      <a
-        href="https://x.com/bringsmilenow"
-        className="text-xl hover:text-yellow-500 transition"
+      <Link
+        href={"https://x.com/niks_developer"}
+        className="text-xl hover:text-p1 transition"
         aria-label="Twitter"
       >
         <FaTwitter />
-      </a>
-      <a
-        href="https://www.instagram.com/BringSmileNow"
-        className="text-xl hover:text-yellow-500 transition"
-        aria-label="Instagram"
-      >
-        <FaInstagram />
-      </a>
-      <a
-        href="https://www.linkedin.com/in/bringsmileindia/"
-        className="text-xl hover:text-yellow-500 transition"
+      </Link>
+      <Link
+       href={"https://www.linkedin.com/in/nikhilanand86/"}
+        className="text-xl hover:text-p1 transition"
         aria-label="LinkedIn"
       >
         <FaLinkedin />
-      </a>
+      </Link>
       <Link
         href={"wa.link/oj5ygd"}
         className="text-xl hover:text-p1 transition"
