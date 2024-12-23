@@ -2,6 +2,8 @@
 import Image from "next/image";
 import Button from "../Button";
 import { useEffect, useState } from "react";
+import axios from "axios";
+
 
 const Hero = () => {
   const [normalizedImages, setNormalizedImages] = useState([]);
@@ -18,12 +20,10 @@ const Hero = () => {
   useEffect(() => {
     console.log("Fetching sharpened hero images..."); // Log when the fetch starts
   
-    fetch("/api/sharpen-hero-img")
+    axios.get("/api/sharpen-hero-img")
       .then((response) => {
-        console.log("Fetch response received:", response); // Log the raw response
-        return response.json();
-      })
-      .then((data) => {
+        console.log("Fetch response received:", response); // Log the full response
+        const data = response.data; // Extract the data from the response
         console.log("Fetched data:", data); // Log the data received from the API
   
         if (data.images && Array.isArray(data.images)) {
@@ -40,10 +40,12 @@ const Hero = () => {
           console.warn("No valid images array in fetched data:", data); // Log a warning if images array is missing or invalid
         }
       })
-      .catch((error) => console.error("Error fetching sharpened images:", error));
+      .catch((error) => {
+        console.error("Error fetching sharpened images:", error); // Log any errors during the fetch
+      });
   }, []);
 
-  
+
   
 
   return (
