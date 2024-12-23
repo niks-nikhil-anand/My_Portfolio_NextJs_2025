@@ -5,6 +5,7 @@ import Link from "next/link";
 import { FaWhatsapp, FaEnvelope, FaClipboard , FaGithub } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
 import Button from "../Button";
+import Image from "next/image";
 
 
 const Footer = () => {
@@ -13,10 +14,36 @@ const Footer = () => {
   <div className="max-w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
   {/* Logo & Address */}
   <div className="space-y-6">
-    <div className="flex items-center space-x-3">
-      <h1 className="text-yellow-500 text-3xl font-extrabold">Logo</h1>
-      <h1 className="text-2xl font-semibold text-white">DevTrekker</h1>
-    </div>
+  <motion.div
+        className="flex items-center space-x-3"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
+      >
+        <motion.div
+          className="rounded-full"
+          whileHover={{
+            rotateY: 360,
+            scale: 1.1,
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 200,
+            damping: 10,
+          }}
+        >
+          <Image
+            src="/images/profile/niks.jpeg"
+            alt="Logo"
+            width={50}
+            height={50}
+            className=" border-s2 rounded-full hover:border-s4 transition-all duration-500 shadow-500 size-20"
+          />
+        </motion.div>
+        <div>
+          <h1 className="text-2xl font-semibold text-white">Nikhil Dev.</h1>
+        </div>
+      </motion.div>
     <p className="text-gray-300">
       Email:{" "}
       <a
@@ -182,7 +209,7 @@ const Footer = () => {
         <FaGithub />
       </Link>
     </div>
-    <div className="text-sm space-x-4 mt-4 md:mt-0">
+    <div className="text-sm space-x-4 mt-4 md:mt-0 p-5">
       <a
         href="/privacyPolicy"
         className="hover:text-p1 bg-[#1b1b33] px-4 py-1 rounded-xl font-bold"
