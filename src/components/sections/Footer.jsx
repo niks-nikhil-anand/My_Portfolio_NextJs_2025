@@ -168,7 +168,7 @@ const Footer = () => {
         <FaLinkedin />
       </Link>
       <Link
-        href={"wa.link/oj5ygd"}
+        href={"https://wa.link/oj5ygd"}
         className="text-xl hover:text-p1 transition"
         aria-label="LinkedIn"
       >
