@@ -174,20 +174,20 @@ const Footer = () => {
       >
         <FaLinkedin />
       </a>
-      <a
-        href="https://www.linkedin.com/in/bringsmileindia/"
-        className="text-xl hover:text-yellow-500 transition"
+      <Link
+        href={"wa.link/oj5ygd"}
+        className="text-xl hover:text-p1 transition"
         aria-label="LinkedIn"
       >
         <FaWhatsapp />
-      </a>
-      <a
-        href="https://www.linkedin.com/in/bringsmileindia/"
-        className="text-xl hover:text-yellow-500 transition"
+      </Link>
+      <Link
+      href={"https://github.com/niks-nikhil-anand"}
+        className="text-xl hover:text-p1 transition"
         aria-label="LinkedIn"
       >
         <FaGithub />
-      </a>
+      </Link>
     </div>
     <div className="text-sm space-x-4 mt-4 md:mt-0">
       <a
