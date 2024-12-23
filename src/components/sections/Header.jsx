@@ -70,7 +70,7 @@ const Header = () => {
                       "max-lg:hidden transition-transform duration-500 cursor-pointer",
                     )}
                   >
-                    <h1>
+                    <h1 className="font-bold ">
                       Freelancer
                     </h1>
                   </LinkScroll>

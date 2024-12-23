@@ -176,41 +176,43 @@ export const plans = [
 export const projects = [
   {
     id: "0",
-    title: "Web Development Project",
-    subtitle: "Freelancer & Website Developer",
+    title: "ShopEase eCommerce Platform + Admin Panel",
+    subtitle: "Nikhil - Full-Stack Developer",
     description:
-      "A passionate freelancer and website developer, crafting user-friendly and visually stunning web solutions tailored to your needs.",
-    image: "/images/testimonials/ecommerce-websites.jpg", // Replace with the actual image URL
-    techUsed: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Framer Motion"],
+      "Built a comprehensive eCommerce platform with an intuitive admin panel, enabling seamless product management, secure payment integration, and an engaging user interface. Tailored for businesses looking for scalable and responsive web solutions.",
+    image: "/images/projects/eCommerce.png",
+    techUsed: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Framer Motion", "Node.js", "Express", "MongoDB"],
   },
   {
     id: "1",
-    title: "Mobile App Design",
-    subtitle: "UI/UX Designer",
+    title: "SalesFlow SAAS & CRM Website",
+    subtitle: "Nikhil - Full-Stack Developer",
     description:
-      "Designing seamless and intuitive user experiences for mobile applications with a focus on aesthetics and functionality.",
-      image: "/images/testimonials/ecommerce-websites.jpg", // Replace with the actual image URL
-      techUsed: ["Figma", "Adobe XD", "React Native", "Tailwind CSS"],
+      "Designed and developed an elegant SAAS and CRM platform focusing on intuitive navigation, responsive layouts, and seamless integration with essential business tools. The project highlights the importance of user-centric design principles.",
+    image: "/images/projects/saas.png",
+    techUsed: ["Figma", "Adobe XD", "React", "Tailwind CSS", "Framer Motion"],
   },
   {
     id: "2",
-    title: "E-commerce Platform",
-    subtitle: "Full-Stack Developer",
+    title: "CareBridge Donation Website",
+    subtitle: "Nikhil - Full-Stack Developer",
     description:
-      "Developed a robust e-commerce platform integrating advanced features like payment gateways, real-time inventory updates, and analytics.",
-      image: "/images/testimonials/ecommerce-websites.jpg", // Replace with the actual image URL
-      techUsed: ["Node.js", "Express", "MongoDB", "React", "Redux"],
+      "Developed a donation platform facilitating secure transactions, real-time updates on campaigns, and an admin dashboard for efficient campaign management. Focused on delivering a seamless experience for donors and administrators.",
+    image: "/images/projects/donation.png",
+    techUsed: ["Node.js", "Tailwind CSS", "MongoDB", "React", "Redux", "Stripe"],
   },
   {
     id: "3",
-    title: "E-commerce Platform",
-    subtitle: "Full-Stack Developer",
+    title: "Multi Vendor Grocery Platform + Super Admin Panel",
+    subtitle: "Nikhil - Full-Stack Developer",
     description:
-      "Developed a robust e-commerce platform integrating advanced features like payment gateways, real-time inventory updates, and analytics.",
-      image: "/images/testimonials/ecommerce-websites.jpg", // Replace with the actual image URL
-      techUsed: ["Node.js", "Express", "MongoDB", "React", "Redux"],
-  },
+      "Developed a multi-vendor grocery platform featuring a seamless shopping experience, secure payment gateways, and efficient order management. Included a super admin panel for managing vendors, inventory, and analytics, ensuring optimal performance and scalability.",
+    image: "/images/projects/grocery.png",
+    techUsed: ["Next.js", "Tailwind CSS", "MongoDB", "React", "Redux", "AWS S3"]
+  }
+  
 ];
+
 
 
 

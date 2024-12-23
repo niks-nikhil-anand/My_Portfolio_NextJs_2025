@@ -7,28 +7,29 @@ const WorkExperience = () => {
     {
       title: "Frontend Engineer Intern",
       description:
-        "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+        "Assisted in the development of a web-based platform using React.js, enhancing interactivity and improving user experience.",
       icon: "🧑‍💻",
     },
     {
-      title: "Mobile App Dev - JSM Tech",
+      title: "Freelance Web Developer",
       description:
-        "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-      icon: "📈",
-    },
-    {
-      title: "Freelance App Dev Project",
-      description:
-        "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+        "Worked as a freelance developer for over 2 years, successfully delivering 50+ websites tailored to client requirements across diverse industries. Specialized in crafting scalable and visually stunning web solutions.",
       icon: "💡",
     },
     {
-      title: "Lead Frontend Developer",
+      title: "Full-Stack Developer - Prestigious Firm",
       description:
-        "Developed and maintained user-facing features using modern frontend technologies.",
+        "Served as a Full-Stack Developer in a renowned organization, contributing to the development of high-performance applications using cutting-edge technologies. Ensured scalability and optimized workflows.",
+      icon: "👨‍💻",
+    },
+    {
+      title: "Lead Backend Developer",
+      description:
+        "Led the backend development team, building scalable server-side logic, optimizing database queries, and ensuring high performance for all APIs and services.",
       icon: "👩‍💻",
     },
   ];
+  
 
   return (
     <div className="container relative z-2 py-24 md:py-28 lg:py-30">
@@ -40,12 +41,12 @@ const WorkExperience = () => {
       <motion.div
         key={index}
         transition={{ type: "spring", stiffness: 300 }}
-        className="relative rounded-xl bg-[#111131] p-6 border-2 border-transparent bg-clip-padding hover:border-purple-500 shadow-lg"
+        className="relative rounded-xl bg-[#111131] p-6 border-2 border-transparent bg-clip-padding hover:text-p1 shadow-lg"
       >
         <div className="flex items-center gap-4">
           <div className="text-5xl text-purple-700">{exp.icon}</div>
           <div>
-            <h3 className="text-xl font-semibold text-gray-50">{exp.title}</h3>
+            <h3 className="text-xl font-semibold text-gray-50 ">{exp.title}</h3>
             <p className="text-sm text-gray-400">{exp.description}</p>
           </div>
         </div>
