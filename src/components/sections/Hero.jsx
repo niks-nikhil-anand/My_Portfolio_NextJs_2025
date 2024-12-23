@@ -6,7 +6,6 @@ import axios from "axios";
 
 
 const Hero = () => {
-  const [normalizedImages, setNormalizedImages] = useState([]);
 
   const handleScrollToFeatures = () => {
     const featuresSection = document.querySelector('[name="features"]');
@@ -17,33 +16,7 @@ const Hero = () => {
 
 
 
-  useEffect(() => {
-    console.log("Fetching sharpened hero images..."); // Log when the fetch starts
-  
-    axios.get("/api/sharpen-hero-img")
-      .then((response) => {
-        console.log("Fetch response received:", response); // Log the full response
-        const data = response.data; // Extract the data from the response
-        console.log("Fetched data:", data); // Log the data received from the API
-  
-        if (data.images && Array.isArray(data.images)) {
-          console.log("Valid images array found:", data.images); // Log the array of images
-  
-          // Normalize all image URLs in the array
-          const normalized = data.images.map((image) =>
-            image.replace(/\\/g, "/").replace(/\.jp$/, ".jpg")
-          );
-          console.log("Normalized images:", normalized); // Log the normalized image URLs
-  
-          setNormalizedImages(normalized);
-        } else {
-          console.warn("No valid images array in fetched data:", data); // Log a warning if images array is missing or invalid
-        }
-      })
-      .catch((error) => {
-        console.error("Error fetching sharpened images:", error); // Log any errors during the fetch
-      });
-  }, []);
+
 
 
   
@@ -51,10 +24,10 @@ const Hero = () => {
   return (
     <section className="relative text-white pt-60 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-md:pb-32">
       {/* Background Image */}
-      {normalizedImages.length > 0 && (
+     
         <div className="absolute inset-0 -z-10">
           <Image
-            src={normalizedImages[0]}
+            src={"/images/hero-sharp.jpg"}
             alt="Hero background"
             layout="fill"
             objectFit="cover"
@@ -62,7 +35,7 @@ const Hero = () => {
             className="bg-no-repeat bg-center"
           />
         </div>
-      )}
+      
 
       {/* Overlay */}
       <div name="hero" className="relative bg-opacity-50 w-full h-full">
