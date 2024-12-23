@@ -106,7 +106,7 @@ const Footer = () => {
   <div className="space-y-6">
     <h2 className="text-lg font-bold text-white">Contact Us</h2>
     <motion.a
-  href="https://wa.me/919599322679"
+  href="https://wa.me/919631494191"
   target="_blank"
   rel="noopener noreferrer"
   className="flex items-center space-x-3 bg-[#1b1b33] text-white py-3 px-5 rounded-2xl hover:text-p1 transition-shadow shadow-lg hover:shadow-xl"
@@ -117,7 +117,7 @@ const Footer = () => {
   <span>Chat on WhatsApp</span>
 </motion.a>
 <motion.a
-  href="mailto:support@devtrekker.org"
+  href="mailto:niks.anand.developer@gmail.com"
   className="flex items-center space-x-3 bg-[#1b1b33] text-white py-3 px-5 rounded-2xl hover:text-p1 transition-shadow shadow-lg hover:shadow-xl"
   whileHover={{ scale: 1.05 }}
   whileTap={{ scale: 0.95 }}
@@ -137,7 +137,7 @@ const Footer = () => {
 </motion.a>
 
 <motion.a
-  href="tel:+919599322679"
+  href="tel:+919631494191"
   className="flex items-center space-x-3 bg-[#1b1b33] text-white py-3 px-5 rounded-2xl hover:text-p1 transition-shadow shadow-lg hover:shadow-xl"
   whileHover={{ scale: 1.05 }}
   whileTap={{ scale: 0.95 }}
