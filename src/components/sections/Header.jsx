@@ -38,14 +38,14 @@ const Header = () => {
   return (
     <header
       className={clsx(
-        "fixed top-0 left-0 z-50 w-full py-10 transition-all duration-500 max-lg:py-4",
-        hasScrolled && "py-2 bg-black-100 backdrop-blur-[6px]",
+        "fixed top-0 left-0 z-50 w-full py-10 transition-all duration-500 max-lg:py-4 md:px-5 ",
+        hasScrolled && "py-2 bg-black-100 backdrop-blur-[6px] md:px-10",
       )}
     >
     <div className=" flex h-14 items-center max-lg:px-5">
       <a className="lg:hidden flex-1 cursor-pointer z-2">
       <motion.div
-      className="flex items-center justify-between w-[100vw] pr-7" 
+      className="flex items-center justify-between w-[100vw] pr-10" 
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeInOut" }}
@@ -88,8 +88,8 @@ const Header = () => {
               <ul className="flex max-lg:block max-lg:px-12">
                 <li className="nav-li">
                   <NavLink title="features" />
-                  <div className="dot" />
                   <NavLink title="plans" />
+                  <NavLink title="experience" />
                 </li>
 
                 <li className="nav-logo">
@@ -133,9 +133,9 @@ const Header = () => {
                 </li>
 
                 <li className="nav-li">
+                  <NavLink title="projects" />
                   <NavLink title="faq" />
-                  <div className="dot" />
-                  <NavLink title="download" />
+                  <NavLink title="cta" />
                 </li>
               </ul>
             </nav>
