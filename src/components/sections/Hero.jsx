@@ -1,12 +1,8 @@
 "use client";
 import Image from "next/image";
 import Button from "../Button";
-import { useEffect, useState } from "react";
-import axios from "axios";
-
 
 const Hero = () => {
-
   const handleScrollToFeatures = () => {
     const featuresSection = document.querySelector('[name="features"]');
     if (featuresSection) {
@@ -14,34 +10,36 @@ const Hero = () => {
     }
   };
 
-
-
   return (
-    <section className="relative text-white pt-60 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-md:pb-32">
-      {/* Background Image */}
-     
-        <div className="absolute inset-0 -z-10">
-          <Image
-            src={"/images/hero-sharp.jpg"}
-            alt="Hero background"
-            layout="fill"
-            objectFit="cover"
-            priority
-            className="bg-no-repeat bg-center"
-          />
-        </div>
-      
+    <section className="relative text-white pt-60 pb-40 lg:pt-60 lg:pb-40 md:pt-36 md:pb-32 sm:pt-28 sm:pb-24 px-4 sm:px-6 lg:px-8">
+      {/* Background Image (if any) */}
 
       {/* Overlay */}
       <div name="hero" className="relative bg-opacity-50 w-full h-full">
-        <div className="container relative z-10">
-          <div className="max-w-512 max-lg:max-w-388">
-            <div className="caption small-2 uppercase text-p3">Web Dev.</div>
-            <h1 className="mb-6 h6 text-p4 max-lg:mb-7 max-lg:h2 max-md:mb-4 max-md:text-5xl max-md:leading-12">
+        <div className="container mx-auto relative z-10">
+          <div className="max-w-3xl lg:max-w-2xl">
+
+            <div className="relative inline-block mb-6 saturn-ring">
+              <Image
+                src="/images/profile/niks.jpeg"
+                alt="Logo"
+                width={80}
+                height={80}
+                className="border-4 rounded-full transition-all duration-500 shadow-lg w-20 h-20"
+              />
+            </div>
+
+            <div className="text-sm uppercase text-p3 mb-4">
+              Full Stack Developer.
+            </div>
+            <h1 className="mb-6 text-5xl lg:text-6xl font-bold leading-tight text-p4">
               Hi, I&apos;m Nikhil Anand
             </h1>
-            <p className="max-w-440 mb-14 body-1 max-md:mb-10">
-              A passionate freelancer and website developer, crafting user-friendly and visually stunning web solutions tailored to your needs.
+
+            <p className="max-w-2xl mb-10 text-lg text-white/90">
+              A passionate freelancer and website developer, crafting
+              user-friendly and visually stunning web solutions tailored to your
+              needs.
             </p>
 
             <div onClick={handleScrollToFeatures}>

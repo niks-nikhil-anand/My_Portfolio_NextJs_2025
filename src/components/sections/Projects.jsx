@@ -3,14 +3,14 @@ import { projects } from "@/constants/index.jsx";
 import TestimonialItem from "../TestimonialItem.jsx";
 
 
-const Testimonials = () => {
+const Projects = () => {
   const halfLength = Math.floor(projects.length / 2);
 
   return (
     <section className="relative z-2 py-24 md:py-28 lg:py-40">
       <div className="container block lg:flex">
         <div className="testimonials_head-res relative z-2 mr-20 flex-300">
-        <p className="caption mb-5 max-md:mb-2.5">Our Portfolio</p>
+        <p className="caption mb-5 max-md:mb-2.5">My Portfolio</p>
         <h3 className="h4 max-md:h5 text-p4">Crafting Exceptional Digital Experiences</h3>
         </div>
 
@@ -40,4 +40,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default Projects;

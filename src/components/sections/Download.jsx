@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { links, logos } from "../../constants/index.jsx";
 import { Marker } from "../Marker.jsx";
 
@@ -12,18 +12,14 @@ const Download = () => {
         <div className="container">
           <div className="flex items-center">
             <div className="relative mr-6 flex-540 max-xl:flex-280 max-lg:flex256 max-md:flex-100">
-              <div className="mb-10">
-                <img
-                  src="/images/xora.svg"
-                  width={160}
-                  height={55}
-                  alt="xora"
-                />
-              </div>
-
-              <p className="body-1 mb-10 max-w-md">
-                Try it now for free on iOS, Android, PC, Web - whatever your
-                flavor, we've got you covered.
+            <h1 className="mb-6 text-3xl lg:text-6xl font-bold leading-tight text-p4">
+              Full Stack Developer
+            </h1>
+              <p className="body-1 mb-10 max-w-screen-2xl">
+                Skilled in delivering scalable web apps using React, Next.js,
+                MongoDB, and PostgreSQL. Always exploring trending tech and UI
+                design with Figma. Open to freelance, collaboration, or
+                full-time roles.
               </p>
 
               <ul className="flex flex-wrap items-center gap-6">
@@ -56,27 +52,14 @@ const Download = () => {
                 <div className="relative rounded-3xl bg-s1 px-6 pb-6 pt-14">
                   <span className="download_preview-dot left-6 bg-p2" />
                   <span className="download_preview-dot left-11 bg-s3" />
+                  <p className="text-gray-300 text-base mt-6 ">
+                  Skilled in delivering scalable web apps using React, Next.js, MongoDB, and PostgreSQL. 
+                </p>
                   <span className="download_preview-dot left-16 bg-p1/15" />
-
-                  <img
-                    src="/images/screen.jpg"
-                    width={855}
-                    height={655}
-                    alt="screen"
-                    className="rounded-xl"
-                  />
                 </div>
               </div>
             </div>
           </div>
-
-          <ul className="mt-24 flex justify-center max-lg:hidden">
-            {logos.map(({ id, url, width, height, title }) => (
-              <li key={id} className="mx-10">
-                <img src={url} width={width} height={height} alt={title} />
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
     </section>

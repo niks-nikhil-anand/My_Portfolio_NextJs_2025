@@ -1,12 +1,12 @@
 "use client"
+import FaqItem from "@/components/FaqItem.jsx";
 import { faq } from "../../constants/index.jsx";
-import FaqItem from "../FaqItem.jsx";
 
 const Faq = () => {
   const halfLength = Math.floor(faq.length / 2);
 
   return (
-    <section>
+    <section className="py-10">
       <div name="faq" className="relative">
         <div className="container relative z-2 py-28">
           <div>

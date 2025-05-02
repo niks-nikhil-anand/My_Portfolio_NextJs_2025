@@ -316,4 +316,30 @@
 }
 
 
+/* Inside globals.css or via Tailwind's @layer if you're using it */
+.saturn-ring::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 9999px;
+  animation: rotateRing 8s linear infinite;
+  z-index: -1;
+}
+
+@keyframes rotateRing {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+
+
 

@@ -6,7 +6,7 @@ import icon from '../../../public/images/icons/airplane.png'
 
 const DigitalPresenceCTA = () => {
   return (
-    <div className="g7 relative text-center min-h-screen flex items-center justify-center px-4">
+    <div className="container relative text-center min-h-screen flex items-center justify-center px-4">
   <div className="space-y-8">
     <motion.h1
       initial={{ opacity: 0, y: -50 }}
