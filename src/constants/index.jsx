@@ -185,10 +185,12 @@ export const projects = [
   {
     id: "0",
     title: "Cleanveda eCommerce Platform + Admin Panel",
-    subtitle: "Nikhil - Full-Stack Developer",
+    subtitle:
+      "A scalable and modern eCommerce platform with an admin panel for product and order management.",
     description:
       "Built a comprehensive eCommerce platform with an intuitive admin panel, enabling seamless product management, secure payment integration, and an engaging user interface. Tailored for businesses looking for scalable and responsive web solutions.",
-    image: "/images/projects/eCommerce.png",
+    author: "Nikhil - Full-Stack Developer",
+    image: "/images/projects/cleanveda.png",
     techUsed: [
       "HTML",
       "CSS",
@@ -200,22 +202,18 @@ export const projects = [
       "Express",
       "MongoDB",
     ],
+    github: "https://github.com/nikhil-projects/cleanveda-ecommerce",
+    live: "https://cleanveda.com",
   },
+  
   {
     id: "1",
-    title: "SalesFlow SAAS & CRM Website",
-    subtitle: "Nikhil - Full-Stack Developer",
-    description:
-      "Designed and developed an elegant SAAS and CRM platform focusing on intuitive navigation, responsive layouts, and seamless integration with essential business tools. The project highlights the importance of user-centric design principles.",
-    image: "/images/projects/saas.png",
-    techUsed: ["Figma", "Adobe XD", "React", "Tailwind CSS", "Framer Motion"],
-  },
-  {
-    id: "2",
     title: "BringSmile Foundation - Donation Website",
-    subtitle: "Nikhil - Full-Stack Developer",
+    subtitle:
+      "A secure and user-friendly donation platform to support social campaigns and fundraising efforts.",
     description:
       "Developed a donation platform facilitating secure transactions, real-time updates on campaigns, and an admin dashboard for efficient campaign management. Focused on delivering a seamless experience for donors and administrators.",
+    author: "Nikhil - Full-Stack Developer",
     image: "/images/projects/donation.png",
     techUsed: [
       "Next.js",
@@ -225,14 +223,37 @@ export const projects = [
       "Framer Motion",
       "Razorpay",
     ],
+    github: "https://github.com/nikhil-projects/bring-smile-donation",
   },
+  {
+    id: "2",
+    title: "Legal & Financial Services Platform + Multi Agent Admin Dashboard",
+    subtitle:
+      "A comprehensive platform offering legal and financial services with dynamic form handling, admin control, and secure user experience.",
+    description:
+      "Built a full-featured legal and financial services web app enabling users to access various services such as company registration, legal filings, and tax consultancy. Integrated with a powerful admin dashboard for service management, form data handling, and user analytics. Ensured scalability and responsiveness across devices.",
+    author: "Nikhil - Full-Stack Developer",
+    image: "/images/projects/legal257.png", 
+    techUsed: [
+      "Next.js",
+      "Tailwind CSS",
+      "MongoDB",
+      "React",
+      "Framer Motion",
+      "AWS S3",
+    ],
+    github: "https://github.com/niks-nikhil-anand/finance_web_app",
+    live: "https://www.legal257.in/",
+  },  
   {
     id: "3",
-    title: "Multi Vendor Grocery Platform + Super Admin Panel",
-    subtitle: "Nikhil - Full-Stack Developer",
+    title: "Flying Alpha - RealEstate Booking Platform + Super Admin Panel",
+    subtitle:
+      "An EdTech learning platform supporting video courses, analytics, and admin-level control for institutions.",
     description:
-      "Developed a multi-vendor grocery platform featuring a seamless shopping experience, secure payment gateways, and efficient order management. Included a super admin panel for managing vendors, inventory, and analytics, ensuring optimal performance and scalability.",
-    image: "/images/projects/grocery.png",
+      "Developed an EdTech platform for Flying Alpha with a robust super admin panel. Enabled course management, user analytics, and smooth learning experience for students. Ensured scalability, security, and a rich user interface.",
+    author: "Nikhil - Full-Stack Developer",
+    image: "/images/projects/flyingAlpha.png",
     techUsed: [
       "Next.js",
       "Tailwind CSS",
@@ -241,22 +262,8 @@ export const projects = [
       "Redux",
       "AWS S3",
     ],
-  },
-  {
-    id: "4",
-    title: "Flying Alpha + Super Admin Panel",
-    subtitle: "Nikhil - Full-Stack Developer",
-    description:
-      "Developed a multi-vendor grocery platform featuring a seamless shopping experience, secure payment gateways, and efficient order management. Included a super admin panel for managing vendors, inventory, and analytics, ensuring optimal performance and scalability.",
-    image: "/images/projects/grocery.png",
-    techUsed: [
-      "Next.js",
-      "Tailwind CSS",
-      "MongoDB",
-      "React",
-      "Redux",
-      "AWS S3",
-    ],
+    github: "https://github.com/nikhil-projects/flying-alpha-edtech",
+    live: "https://flyingalpha.com",
   },
 ];
 
